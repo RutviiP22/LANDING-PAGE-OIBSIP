@@ -1,0 +1,254 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&family=Kalnia:wght@100&family=Roboto+Condensed:ital,wght@1,300&family=Rubik+Bubbles&display=swap');
+</style>
+
+.body{
+  font-family: 'Hedvig',serif;  
+}
+
+:root{
+    --primary-color:#49cc9ede;
+    --primary-color-dark:#2b8263de;
+    --primary-color-light:#66e6b9de;
+    --text-dark:#b81babde;
+    --text-light:#84cded;
+    --extra-light:#cad8e2de;
+    --white:#f9f9f9de;
+    --max-width-1400:1400px;
+    --max-width-1200:1200px;
+    --max-width-900:900px;
+    --header-font:'Hedvig',serif;  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.section-container{
+    max-width:var(--max-width-1400);
+    margin: auto;
+    padding: 3rem; 
+}
+
+.section-header{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Hedvig',serif; 
+    color: #b81babde;
+    text-align: center;
+}
+
+.section-subheader{
+    max-width: 500px;
+    margin: auto;
+    color: #84cded;
+    text-align: center;
+}
+
+.btn{
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color:#f9f9f9de; 
+    background-color: #49cc9ede;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #2b8263de;
+}
+
+img{
+    width: 80%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    max-width:--max-width-1200;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{
+    flex: 1;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: larger;
+}
+
+.link a{
+    font-weight: 500;
+    color:#b81babde;
+}
+
+.link a:hover{
+    color:#c6818cde;
+}
+
+.nav-logo a{
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family:'Hedvig',serif; 
+    color:#671560de;
+}
+
+.nav-logo a span{
+    color:#49cc9ede;
+}
+
+.nav-icons{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-icons span a{
+    font-size: 1.25rem;
+    color:#671560de;
+}
+
+.nav-icons span a:hover{
+    color: #c6818cde;
+}
+
+.header-container{
+    min-height: 625px;
+    background-color:#66e6b9de;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-content{
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.header-content h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:#671560de;
+}
+
+.header-content h1{
+    font-size: 5rem;
+    font-weight: 800;
+    font-family:'Hedvig',serif;  
+    color:#b81babde;
+}
+
+.header-content p{
+    margin-bottom: 2rem;
+    color:#671560de;
+}
+
+.header-image{
+    position: relative;
+    height: 100%;
+}
+
+.header-image img{
+    position: absolute;
+    left: 50%;
+    bottom: -5rem;
+    transform: translateX(-50%);
+    max-width: 500px;
+    top: -3%;
+}
+
+.categories-grid{
+    max-width:--max-width-900;
+    margin: auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+
+}
+
+.categories-card{
+    text-align: center;
+}
+
+.categories-card img{
+    max-width: 100px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 5px solid white;
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgb(0, 0,0,0.1);
+}
+
+.categories-card h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family:'Hedvig',serif; 
+    color: #b81babde;
+}
+
+.product-grid{
+    max-width: var(--max-width-900);
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.product-card-content{
+    text-align: start;
+    padding: 1rem;
+}
+
+.product-rating{
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: antiquewhite;
+}
+
+.product-card-content h4{
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+}
+
+.product-card-content p{
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.product-card-content p s{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.product-btn{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 23px;
+ }
